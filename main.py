@@ -23,13 +23,7 @@ model = ["debugging message sending"]
 
 bot = commands.Bot(command_prefix='$', intents = intents)
 
-user_dict = {
-    "katrinajurczyk": "316ab908-e03d-47db-9398-be75dc84bf43",
-    "Jeff": "c8c2c905-f610-465b-90a9-127708e313d1",
-    "ryansequeira": "6c227a8d-5155-4722-b635-7aee5615f346",
-    "testuser1": "114afad1-8aad-4fe9-ad96-5bb73e0c5ab6",
-    "tianlecai": "a421d4d3-ef9f-418a-9da0-addad5ccffa9"
-}
+
 dynamodb = boto3.resource('dynamodb')
 PSTable = dynamodb.Table("ProductivityScore-p4fhyzhl5zfxxp4oksg3k3kegy-dev")
 ClassTable = dynamodb.Table ("Classes-p4fhyzhl5zfxxp4oksg3k3kegy-dev")
